@@ -60,7 +60,7 @@ class Card extends Component {
         break;
     }
     const {btnToShow,checkForCorrect} = this.state
-    let display = btnToShow?{display: 'inline'}:{display: 'none'}
+    let display = btnToShow?{display: 'inline',height:'50px',borderRadius:'10px',marginLeft:'20px'}:{display: 'none',height:'50px',borderRadius:'10px',marginLeft:'20px'}
     let displayResult = btnToShow?{display: 'inline'}:{display: 'none'}
     return (
       <div
@@ -88,6 +88,7 @@ class Card extends Component {
                 id="btnOption"
                 value={option}
                 key={option}
+                style={{height:'50px',borderRadius:'10px',marginLeft:'20px'}}
               >
                 {option}
               </button>
